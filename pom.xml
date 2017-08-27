@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>hkd</name>
+    <name>redis+swagger</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -102,8 +102,8 @@
         <!--pagehelper-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper</artifactId>
-            <version>4.1.1</version>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.1.0</version>
         </dependency>
 
         <!-- swagger -->
@@ -125,13 +125,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.springframework</groupId>
-                        <artifactId>springloaded</artifactId>
-                        <version>1.2.5.RELEASE</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>
